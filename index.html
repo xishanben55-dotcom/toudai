@@ -26,8 +26,12 @@
     .table-wrap{overflow:auto}
     table{border-collapse:collapse; width:100%; min-width:820px}
     th,td{border:1px solid #e6e9ee; padding:8px; text-align:center; background:white}
-    th{background:#f3f6fb; position:sticky; top:0; z-index:2; font-weight:600}
-    td.year{background:#fafbff; font-weight:600; position:sticky; left:0; z-index:1}
+    /* make header row sticky at top */
+    th{background:#f3f6fb; position:sticky; top:0; z-index:3; font-weight:600}
+    /* make first column (year) sticky on the left */
+    td.year{background:#fafbff; font-weight:600; position:sticky; left:0; z-index:4}
+    /* make the top-left corner (first th) sticky both top and left and above other cells */
+    thead th:first-child{position:sticky; left:0; top:0; z-index:6; background:#f3f6fb}
 
     a.done{display:inline-flex; width:28px; height:28px; align-items:center; justify-content:center; border-radius:50%; text-decoration:none; color:white; background:var(--accent); font-weight:700}
     td.empty{color:#bbb}
@@ -51,8 +55,8 @@
     <section class="meta">
       <div class="purpose">
         <h2>動機・目的</h2>
-        <p>自分がテトテストの作問をしてみる中で、難関大学入試等における誘導や問題がとても整っていてきれいだとたびたび感じることがあります。これからの数学の勉強や作問で役立てるためにも、質が最高峰と思われる東大の問題の、誘導の構造の分析と作問原理を研究しようと思いました。</p>
-        <p>本研究は、東京大学の数学試験（総合問題および第1問〜第6問）に見られる思考誘導の構造を分析し、出題（作問）に関する原理を明らかにすることを目的としています。</p>
+        <p>自分がテトテストの作問をしてみる中で、難関大学入試等における誘導や問題がとても整っていてきれいだとたびたび感じることがあり、そこから着想を得て本研究を始めました。</p>
+        <p>本研究は、東京大学の数学試験（総合問題および第1問〜第6問）に見られる思考誘導の構造を分析し、出題（作問）に関する原理を明らかにすることを目的とします。各年・各問ごとの解析結果へは下の表から参照できます。</p>
       </div>
     </section>
 

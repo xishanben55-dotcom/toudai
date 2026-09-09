@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>2000年 総合解析 — 東大数学 思考誘導の構造分析</title>
+  <style>
+    :root{--accent:#0b72ff;--bg:#fafcff;--muted:#666}
+    body{font-family: "Hiragino Kaku Gothic ProN", Meiryo, "Helvetica Neue", Arial, sans-serif; margin:0; background:var(--bg); color:#111}
+    main{max-width:900px; margin:28px auto; padding:16px}
+    h1{font-size:1.4rem; margin:0 0 8px 0}
+    p.lead{color:var(--muted); margin:0 0 18px 0}
 
+    .table-wrap{overflow:auto; border-radius:8px}
+    table{border-collapse:collapse; width:100%; min-width:720px}
+    th,td{border:1px solid #e6e9ee; padding:10px; text-align:center}
+    th{background:#f3f6fb; font-weight:700}
+    td.qname{background:#fffdfa; font-weight:700}
+
+    a.cell-link{display:inline-block; width:30px; height:30px; line-height:30px; text-decoration:none; border-radius:50%; background:var(--accent); color:white; font-weight:700}
+    td.empty{color:#bbb}
+
+    .actions{margin-top:18px; display:flex; gap:12px; align-items:center}
+    .btn{display:inline-block; padding:10px 14px; background:#fff; border:1px solid #e6e9ee; border-radius:6px; text-decoration:none; color:#111}
+    .btn.primary{background:var(--accent); color:white; border-color:var(--accent)}
+
+    @media (max-width:600px){ main{padding:12px} table{min-width:600px} }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>2000年（総合）解析</h1>
+    <p class="lead">表は縦軸が第1問〜第6問、横軸が難易度・単元・良問・誘導・背景です。〇のセルは解析ページへリンクします。</p>
+
+    <div class="table-wrap">
+      <table aria-label="2000年総合解析テーブル">
+        <thead>
+          <tr>
+            <th>問題</th>
+            <th>難易度</th>
+            <th>単元</th>
+            <th>良問</th>
+            <th>誘導</th>
+            <th>背景</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="qname">第1問</td>
+            <td>B</td>
+            <td>解析学（微分）</td>
+            <td><a class="cell-link" href="2000_Q1.html">〇</a></td>
+            <td><a class="cell-link" href="2000_Q1.html">〇</a></td>
+            <td class="empty">-</td>
+          </tr>
+          <tr>
+            <td class="qname">第2問</td>
+            <td>C</td>
+            <td>代数・整式</td>
+            <td class="empty">-</td>
+            <td class="empty">-</td>
+            <td class="empty">-</td>
+          </tr>
+          <tr>
+            <td class="qname">第3問</td>
+            <td>A</td>
+            <td>幾何（ベクトル）</td>
+            <td><a class="cell-link" href="2000_Q3.html">〇</a></td>
+            <td class="empty">-</td>
+            <td><a class="cell-link" href="2000_Q3.html">〇</a></td>
+          </tr>
+          <tr>
+            <td class="qname">第4問</td>
+            <td>B</td>
+            <td>確率</td>
+            <td class="empty">-</td>
+            <td><a class="cell-link" href="2000_Q4.html">〇</a></td>
+            <td class="empty">-</td>
+          </tr>
+          <tr>
+            <td class="qname">第5問</td>
+            <td>C</td>
+            <td>整数・数論</td>
+            <td class="empty">-</td>
+            <td class="empty">-</td>
+            <td class="empty">-</td>
+          </tr>
+          <tr>
+            <td class="qname">第6問</td>
+            <td>D</td>
+            <td>補題的な小問群</td>
+            <td class="empty">-</td>
+            <td class="empty">-</td>
+            <td class="empty">-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="actions">
+      <a class="btn" href="index.html">ホームに戻る</a>
+      <a class="btn primary" href="javascript:history.back()">前のページへ</a>
+    </div>
+  </main>
+</body>
+</html>
